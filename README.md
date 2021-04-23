@@ -1,6 +1,6 @@
 # Embedded C Activities with Continuous Integration and Code Quality
 
-## Activity1 In Action 
+## Activity 1 In Action 
 
 |ON|OFF|
 |:--:|:--:|
