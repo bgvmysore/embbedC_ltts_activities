@@ -10,7 +10,7 @@
 
 #### CI and Code Quality
 
-|Build|Cppcheck|Codacy|
-|:--:|:--:|:--:|
-|NA|NA|NA|
+|Build|Cppcheck|
+|:--:|:--:|
+|[![Compile-Linux](https://github.com/bgvmysore/embbedC_ltts_activities/actions/workflows/Compile.yml/badge.svg)](https://github.com/bgvmysore/embbedC_ltts_activities/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/bgvmysore/embbedC_ltts_activities/actions/workflows/CodeQulaity.yml/badge.svg)](https://github.com/bgvmysore/embbedC_ltts_activities/actions/workflows/CodeQulaity.yml)|
 
