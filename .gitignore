@@ -1,6 +1,7 @@
 # Doxygen generated files
 *Build*
 *html*
+*.vscode*
 
 # Prerequisites
 *.d
