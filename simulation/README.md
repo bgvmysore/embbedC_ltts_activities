@@ -28,7 +28,7 @@ int main(void)
 }
 ```
 
-### factivity1.c
+### activity1.c
 
 ``` C
 #include "activity1.h"
