@@ -16,7 +16,7 @@
 #include <avr/io.h>
 
 /**
- * @brief This function used pins B0, B1, B2.
+ * @brief This function uses pins B0, B1, B2.
  * Sets the directions of pins B1, B2 as input and pin B0 output
  * Also initalizers the pin B1, B2 to high and B0 to low
  */
