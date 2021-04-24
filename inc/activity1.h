@@ -1,3 +1,14 @@
+/**
+ * @file activity1.h
+ * @author Bhargav R
+ * @brief This activity is to sence 2 input and should actuate LED if both inputs are high.
+ * @version 0.1
+ * @date 2021-04-24
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef _ACTIVITY_1_
 #define _ACTIVITY_1_
 
