@@ -12,7 +12,6 @@
 #ifndef _ACTIVITY_1_
 #define _ACTIVITY_1_
 
-#define __AVR_ATmega328__
 #include <avr/io.h>
 
 /**
