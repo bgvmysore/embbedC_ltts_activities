@@ -13,24 +13,31 @@
 
 #include "pwmHeatOut.h"
 
+#include "uartOut.h"
+
 int main(void)
 {
 	uint16_t adcData = 0;
+	uint8_t tmpData = 0;
+
 	activity1_init();
 	initADC();
 	pwmInit_OC1A();
+	USART_Init(BRR);
 
 	while(1){
 		activity1_loop();
+		
 		adcData = readADC0();
-		if(isHeaterActuated()){
+		
+		if(isHeaterActuated())
 			setCompare_OC1A(adcData);
-			_delay_ms(200);
-		}
-		else{
+		else
 			setCompare_OC1A(0x0000);
-			_delay_ms(200);
-		}
+
+		USART_Transmit('A');
+
+		_delay_ms(200);
 	}
 	
 	return 0;
