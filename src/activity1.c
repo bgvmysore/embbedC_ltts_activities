@@ -17,16 +17,19 @@ void activity1_init(){
 }
 
 void activity1_loop(){
-        if( !(PINB & (1<<PB3)) && !(PINB & (1<<PB2))){
+        if(isActuated)
             PORTB = PORTB | (1<<PB0);
-            isActuated = TRUE;
-        }
-        else{
+        else
             PORTB = PORTB & ~(1<<PB0);
-            isActuated = FALSE;
-        }
+
 }
 
 uint8_t isHeaterActuated(){
+    if( !(PINB & (1<<PB3)) && !(PINB & (1<<PB2))){
+        isActuated = TRUE;
+    }
+    else{
+        isActuated = FALSE;
+    }
     return isActuated;
 }

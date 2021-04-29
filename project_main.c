@@ -20,25 +20,24 @@ int main(void)
 	uint16_t adcData = 0;
 	char outputstr[60];
 
+	//activi
 	activity1_init();
 	initADC();
 	pwmInit_OC1A();
 	USART_Init(BRR);
 
 	while(1){
+
+		// activity 1
 		activity1_loop();
 		
-		adcData = readADC0();
+		// activity 2
+		adcData = readADC0(isHeaterActuated());
 		
-		if(isHeaterActuated()){
-			adcData = readADC0();
-			setCompare_OC1A(adcData);
-		}
-		else{
-			setCompare_OC1A(0x0000);
-			adcData = 0x0000;
-		}
+		// activity 3
+		setCompare_OC1A(adcData);
 
+		// activity 4
 		heatActuationInPercentage(adcData, outputstr);
 		outPutString_UART(outputstr);
 

@@ -5,10 +5,13 @@
     #define __AVR_ATmega328__
 #endif
 
+#define TRUE 0xFF
+#define FALSE 0x00
+
 #include <avr/io.h>
 
 void initADC(void);
 
-uint16_t readADC0(void);
+uint16_t readADC0(uint8_t actuationState);
 
 #endif//_TEMP_SET_H_

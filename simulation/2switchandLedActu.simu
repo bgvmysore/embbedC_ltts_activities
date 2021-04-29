@@ -6,7 +6,7 @@ Circuit Id: Rail-31
 
 Unique  Id: Potentiometer-15: 
 Circuit Id: Potentiometer-24
-<item valLabely="-30" Value_Ohm="929" valLabRot="0" circRot="2.9158766286258689e-316" Show_res="true" objectName="Potentiometer-15" rotation="90" x="-132" boardRot="-1000000" hflip="1" vflip="1" labelrot="0" circPos="0,0" y="-280" itemtype="Potentiometer" labelx="-16" mainComp="false" Unit=" kΩ" id="Potentiometer-24" labely="-40" Resistance="1" Show_id="false" valLabelx="-1" boardPos="-1e+06,-1e+06"/>
+<item valLabely="-30" Value_Ohm="500" valLabRot="0" circRot="2.9158766286258689e-316" Show_res="true" objectName="Potentiometer-15" rotation="90" x="-132" boardRot="-1000000" hflip="1" vflip="1" labelrot="0" circPos="0,0" y="-280" itemtype="Potentiometer" labelx="-16" mainComp="false" Unit=" kΩ" id="Potentiometer-24" labely="-40" Resistance="1" Show_id="false" valLabelx="-1" boardPos="-1e+06,-1e+06"/>
 
 Unique  Id: Node-14: 
 Circuit Id: Node-27
@@ -63,6 +63,10 @@ Circuit Id: Ground-54
 Unique  Id: Node-1: 
 Circuit Id: Node-56
 <item valLabely="0" valLabRot="0" circRot="nan" objectName="Node-1" rotation="0" x="-136" boardRot="-1000000" hflip="1" vflip="1" labelrot="0" circPos="0,0" y="-144" itemtype="Node" labelx="-16" mainComp="false" id="Node-56" labely="-24" Show_id="false" valLabelx="0" boardPos="-1e+06,-1e+06"/>
+
+Unique  Id: SerialTerm-63: 
+Circuit Id: SerialTerm-63
+<item valLabely="0" Mcu_Uart="1" valLabRot="0" circRot="0" objectName="SerialTerm-63" Mcu_Id="atmega328-7" rotation="0" x="-252" boardRot="-1000000" hflip="1" vflip="1" posx="798" labelrot="0" posy="60" circPos="0,0" y="-328" itemtype="SerialTerm" labelx="-16" mainComp="false" id="SerialTerm-63" labely="-24" Show_id="false" valLabelx="0" sizey="244" boardPos="-1e+06,-1e+06" sizex="750"/>
 
 Unique  Id: Connector-17: 
 Circuit Id: Connector-3
