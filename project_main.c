@@ -18,7 +18,7 @@
 int main(void)
 {
 	uint16_t adcData = 0;
-	uint8_t tmpData = 0;
+	char outputstr[60];
 
 	activity1_init();
 	initADC();
@@ -35,7 +35,8 @@ int main(void)
 		else
 			setCompare_OC1A(0x0000);
 
-		USART_Transmit('A');
+		heatActuationInPercentage(adcData, outputstr);
+		outPutString_UART(outputstr);
 
 		_delay_ms(200);
 	}

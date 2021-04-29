@@ -19,3 +19,15 @@ void USART_Transmit(unsigned char data){
     /* Put data into buffer, sends the data */
     UDR0 = data;
 }
+
+void heatActuationInPercentage(uint16_t adcdata, char serialout[]){
+    uint32_t mydata = (uint32_t)( (uint32_t)adcdata * (uint32_t) 100);
+    mydata = (uint32_t) (mydata / (uint32_t) 1024);
+    sprintf(serialout, "Heat actuation : 10-bit: %4u , Percentage: %2u%%\n", adcdata, (uint16_t)mydata);
+}
+
+void outPutString_UART(char serialout[]){
+    short n = strlen(serialout);
+    for(int i=0;i<n;i++)
+        USART_Transmit(serialout[i]);
+}
