@@ -33,6 +33,12 @@ void activity1_init();
  */
 void activity1_loop();
 
+/**
+ * @brief This function returns TRUE(0xFF) if both pins B3 and B2 are pulled low and
+ * returns FALSE(0x00) otherwise.
+ * 
+ * @return uint8_t returns TRUE(0xFF) or FALSE(0x00) depending on pins B2 and B3.
+ */
 uint8_t isHeaterActuated();
 
 #endif
