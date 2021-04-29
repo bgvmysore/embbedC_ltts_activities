@@ -24,11 +24,11 @@ int main(void)
 		activity1_loop();
 		adcData = readADC0();
 		if(isHeaterActuated()){
-			setCompare(adcData);
+			setCompare_OC1A(adcData);
 			_delay_ms(200);
 		}
 		else{
-			setCompare(0x0000);
+			setCompare_OC1A(0x0000);
 			_delay_ms(200);
 		}
 	}

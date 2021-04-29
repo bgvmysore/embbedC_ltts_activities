@@ -9,6 +9,6 @@
 
 void pwmInit_OC1A(void);
 
-void setCompare(uint16_t comparevalue);
+void setCompare_OC1A(uint16_t comparevalue);
 
 #endif//_PWMHEATOUT_H_

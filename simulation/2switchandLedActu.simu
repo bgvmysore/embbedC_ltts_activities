@@ -58,7 +58,7 @@ Circuit Id: Node-27
 
 Unique  Id: Potentiometer-3: 
 Circuit Id: Potentiometer-24
-<item boardRot="-1000000" labely="-40" valLabRot="0" valLabelx="-1" itemtype="Potentiometer" labelx="-16" circPos="0,0" valLabely="-30" rotation="90" objectName="Potentiometer-3" hflip="1" Show_id="false" mainComp="false" id="Potentiometer-24" circRot="2.9158766286258689e-316" y="-280" Resistance="1" boardPos="-1e+06,-1e+06" x="-132" Unit=" kΩ" Show_res="true" vflip="1" labelrot="0" Value_Ohm="377"/>
+<item boardRot="-1000000" labely="-40" valLabRot="0" valLabelx="-1" itemtype="Potentiometer" labelx="-16" circPos="0,0" valLabely="-30" rotation="90" objectName="Potentiometer-3" hflip="1" Show_id="false" mainComp="false" id="Potentiometer-24" circRot="2.9158766286258689e-316" y="-280" Resistance="1" boardPos="-1e+06,-1e+06" x="-132" Unit=" kΩ" Show_res="true" vflip="1" labelrot="0" Value_Ohm="650"/>
 
 Unique  Id: Rail-1: 
 Circuit Id: Rail-31
