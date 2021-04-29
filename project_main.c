@@ -11,8 +11,11 @@
 // AC0 used as analog input for temperature set control
 #include "tempSet.h"
 
+// pins used are:
+// OC1A (B1) to output pwm signal
 #include "pwmHeatOut.h"
 
+// UART0 is used to output amount of heat actuated
 #include "uartOut.h"
 
 int main(void)
@@ -20,10 +23,16 @@ int main(void)
 	uint16_t adcData = 0;
 	char outputstr[60];
 
-	//activi
+	// activity 1
 	activity1_init();
+
+	// activity 2
 	initADC();
+
+	// activity 3
 	pwmInit_OC1A();
+
+	// activity 4
 	USART_Init(BRR);
 
 	while(1){
