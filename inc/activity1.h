@@ -18,16 +18,21 @@
 
 #include <avr/io.h>
 
+#define TRUE 0xFF
+#define FALSE 0x00
+
 /**
- * @brief This function uses pins B0, B1, B2.
- * Sets the directions of pins B1, B2 as input and pin B0 output
- * Also initalizers the pin B1, B2 to high and B0 to low
+ * @brief This function uses pins B0, B3, B2.
+ * Sets the directions of pins B3, B2 as input and pin B0 output
+ * Also initalizers the pin B3, B2 to high and B0 to low
  */
 void activity1_init();
 
 /**
- * @brief This function outputs high in pin B0 if both pin B1 and B2 are pulled low.
+ * @brief This function outputs high in pin B0 if both pin B3 and B2 are pulled low.
  */
 void activity1_loop();
+
+uint8_t isHeaterActuated();
 
 #endif
