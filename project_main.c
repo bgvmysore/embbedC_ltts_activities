@@ -30,10 +30,14 @@ int main(void)
 		
 		adcData = readADC0();
 		
-		if(isHeaterActuated())
+		if(isHeaterActuated()){
+			adcData = readADC0();
 			setCompare_OC1A(adcData);
-		else
+		}
+		else{
 			setCompare_OC1A(0x0000);
+			adcData = 0x0000;
+		}
 
 		heatActuationInPercentage(adcData, outputstr);
 		outPutString_UART(outputstr);
