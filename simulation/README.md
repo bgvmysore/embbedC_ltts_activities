@@ -1,8 +1,6 @@
 # Project In Action
 
-|ON|OFF|
-|:--:|:--:|
-|\image html ON.png||
+![inaction](ProjectInAction.gif)
 
 ## Code 
 

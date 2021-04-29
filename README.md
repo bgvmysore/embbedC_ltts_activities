@@ -1,10 +1,8 @@
 # Embedded C Activities with Continuous Integration and Code Quality
 
-## Activity 1 In Action 
+## Project In Action 
 
-|ON|OFF|
-|:--:|:--:|
-|![ON](simulation/ON.png)|![OFF](simulation/OFF.png)|
+![InAction](simulation/ProjectInAction.gif)
 
 #### CI and Code Quality
 
