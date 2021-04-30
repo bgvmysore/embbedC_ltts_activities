@@ -34,7 +34,7 @@ int main(void)
 
 	while(1){
 		uint16_t adcData = 0;
-		char outputstr[60];
+		char outputstr[30];
 
 		// activity 1
 		activity1_loop();

@@ -43,7 +43,7 @@ void USART_Transmit(unsigned char data);
 /**
  * @brief This function generates a string that contains info about amount of heat actuation.
  * This string is of the form:
- * "Heat actuation : 10-bit: %4u , Percentage: %2u%%\n"
+ * "Heat actuation : %2u%%\n"
  * 
  * @param adcdata The adcvalue or temperature set value which dictates the amout of heat actuation.
  * @param serialout This char array of length 60 which stores the generated string which is to be transmitted serially.
