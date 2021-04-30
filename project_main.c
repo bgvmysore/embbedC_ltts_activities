@@ -20,9 +20,6 @@
 
 int main(void)
 {
-	uint16_t adcData = 0;
-	char outputstr[60];
-
 	// activity 1
 	activity1_init();
 
@@ -36,6 +33,8 @@ int main(void)
 	USART_Init(BRR);
 
 	while(1){
+		uint16_t adcData = 0;
+		char outputstr[60];
 
 		// activity 1
 		activity1_loop();
