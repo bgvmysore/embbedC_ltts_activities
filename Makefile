@@ -1,5 +1,4 @@
 PROJ_NAME = activity
-
 BUILD_DIR = Build
 
 # All Source code files
